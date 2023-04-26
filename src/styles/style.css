@@ -3,6 +3,9 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   background-color: rgb(69, 69, 132);
   max-height: 100vh;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -41,6 +44,7 @@ body {
   text-transform: uppercase;
   color: #fff;
   background-color: rgb(214, 155, 46);
+  border: none;
   border-radius: 10px;
   padding: 2px 15px;
   font-size: 1rem;
@@ -88,4 +92,43 @@ input[type='radio'].radio-button + label::before {
 
 input[type='radio'].radio-button:checked + label::after {
   background-color: rgb(214, 155, 46);
+}
+
+.container-task-list {
+  background-color: rgb(76, 73, 73);
+  border-radius: 10px;
+  min-width: 100%;
+}
+
+.container-task-list > ul {
+  color: #fff;
+  list-style-type: none;
+  padding: 0;
+}
+
+.container-task-list > ul > li {
+  background-color: rgb(214, 155, 46);
+  border-bottom: 1px solid #000;
+  display: flex;
+  justify-content: space-between;
+}
+
+.delete {
+  background: none;
+  border: none;
+  padding: 0;
+  margin-right: 20px;
+  align-self: flex-end;
+}
+
+.delete:hover {
+  cursor: pointer;
+}
+
+.delete > img {
+  max-width: 20px;
+}
+
+.check {
+  margin-left: 20px;
 }

@@ -5,12 +5,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../src/styles/style.css">
+  <script src="../src/index.js" async></script>
   <title>To do List</title>
 </head>
 <body>
   <div class="container">
     <img class="logo" src="../src/assets/logo.png" alt="logo" />
-      <input class="add-new-task" type='text' autofocus value=""/>
+      <input class="add-new-task" type='text' autofocus/>
       <button class="add-button">Ajouter</button>
     <fieldset>
       <input class="radio-button" type="radio" id="all" name="task" checked/>
@@ -19,11 +20,14 @@
       <label for="to-do">A faire</label>
       <input class="radio-button" type="radio" id="did"  name="task" />
       <label for="did">Fait</label>
-      <div class="task-list">
-
-      </div>
     </fieldset>
-
+    <div class="container-task-list">
+      <ul>
+        <li><input class="check" type="checkbox" checked />Tache 1 <button class="delete"><img src="../src/assets/delete.png" alt="bin"/></button></li>
+        <li><input class="check" type="checkbox" />Tache 2 <button class="delete"><img src="../src/assets/delete.png" alt="bin"/></button></li>
+        <!--Element of the list will come with JS-->
+      </ul>
+    </div>
   </div>
 </body>
 </html>
